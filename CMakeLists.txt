@@ -2,9 +2,9 @@ cmake_minimum_required(VERSION 2.8)
 
 project(Printer)
 
-set(TARGET_SRC ./src/main.cpp ./src/printable.cpp)
-set(TARGET_INC ./inc/printable.h)
-set(TARGET_GTEST ./tests/main.cpp ./tests/sum.cpp)
+set(TARGET_SRC ./src/main.cpp ./src/printer.cpp)
+set(TARGET_INC ./inc/printer.h)
+set(TARGET_GTEST ./tests/main.cpp ./tests/sum.cpp ./src/printer.cpp)
 
 
 add_executable(${PROJECT_NAME} ${TARGET_SRC} ${TARGET_INC})

@@ -1,9 +1,15 @@
 #include <iostream>
+#include "printer.h"
 
-using namespace std;
+
+
 
 int main()
 {
-    cout << "Hello World!" << endl;
+
+    PrinterXML obj;
+    obj.setInputFile("input.txt");
+    obj.getOutputFile("output.txt");
+    obj.print();
     return 0;
 }
